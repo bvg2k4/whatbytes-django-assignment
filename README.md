@@ -1,17 +1,1 @@
-## **Setup Instructions**
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-link>
-   cd auth_system
-2.Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-3.Run migrations:
-   ```bash
-   python manage.py migrate
-4.Create a superuser:
-   ```bash
-   python manage.py createsuperuser
-5.Start the server:
-   ```bash
-   python manage.py runserver
+Clone the repository using `git clone <your-repo-link>` and navigate into the project directory with `cd auth_system`. Install the required dependencies by running `pip install -r requirements.txt`. Apply the migrations using `python manage.py migrate`. Create a superuser account with `python manage.py createsuperuser`. Finally, start the server by running `python manage.py runserver`, then access the application at `http://127.0.0.1:8000/`.
