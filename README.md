@@ -4,6 +4,7 @@
    git clone <your-repo-link>
    cd auth_system
 2.Install dependencies:
+   ```bash
    pip install -r requirements.txt
 3.Run migrations:
    python manage.py migrate
