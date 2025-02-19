@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 350px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-header {
+    background: #E57373;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #E57373;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #E57373;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-footer {
+    background: #E57373;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.login-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.change-password-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.change-password-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.change-password-container form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #E57373;
+    border-radius: 5px;
+}
+
+.change-password-container button {
+    width: 100%;
+    padding: 10px;
+    background: #E57373;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #E57373;
+    font-weight: bold;
+}

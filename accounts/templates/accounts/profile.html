@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-container {
+            width: 400px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #E57373;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .btn-dashboard {
+            background: #64B5F6;
+            color: white;
+        }
+
+        .btn-logout {
+            background: #E57373;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Date Joined:</strong> {{ user.date_joined }}</p>
+        <p><strong>Last Updated:</strong> {{ user.last_login }}</p>
+
+        <a href="{% url 'dashboard' %}" class="btn btn-dashboard">Go to Dashboard</a>
+        <a href="{% url 'logout' %}" class="btn btn-logout">Logout</a>
+    </div>
+
+</body>
+
+</html>
